@@ -64,7 +64,6 @@ public class UserApplication {
                     System.out.println("Enter the user password: ");
                     String password = input.nextLine();
                     
-                    System.out.println(String.join(" ", userId, firstname, lastname, userId, password));
                     boolean isUserAdded = user.addUser(firstname, lastname, userId, password, true);
                     if (isUserAdded) {
                         System.out.println("User added");
